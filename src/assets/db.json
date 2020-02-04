@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "anchor": "Anchor",
+      "url0": "url0",
+      "headline": "HEADLINE",
+      "item1": "Item 1",
+      "description1": "Description 1",
+      "url1": "url1",
+      "item2": "Item 2",
+      "description2": "Description 2",
+      "url2": "url2",
+      "item3": "Item 3",
+      "description3": "Description 3",
+      "url3": "url3"
+    }
+  ]
+}

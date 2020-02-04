@@ -1,0 +1,47 @@
+
+<div class="container">
+  <br />
+
+  <!--shows when there are no items-->
+  <div class="no-data text-center" *ngIf="Item.length == 0">
+    <p>There are no items</p>
+  </div>
+
+  <!--shows when there are items-->
+  <div *ngIf="Item.length !== 0">
+
+    <div class="col-md-12 table-responsive-md">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">anchor</th>
+            <th scope="col">headline</th>
+            <th scope="col">item1</th>
+            <th scope="col">description1</th>
+            <th scope="col">item2</th>
+            <th scope="col">description2</th>
+            <th scope="col">item3</th>
+            <th scope="col">description3</th>
+            <th scope="col">edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of Item">
+              <td>{{item.anchor}}</td>
+              <td>{{item.headline}}</td>
+              <td>{{item.item1}}</td>
+              <td>{{item.description1}}</td>
+              <td>{{item.item2}}</td>
+              <td>{{item.description2}}</td>
+              <td>{{item.item3}}</td>
+              <td>{{item.description3}}</td>
+              <td><span class="btn btn-outline-primary" routerLink="/item-edit/{{item.id}}">Edit</span></td>             
+              <!--<span class="btn btn-outline-primary" (click)="deleteItem(item.id)">Delete</span>-->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>  
+</div>
+    
