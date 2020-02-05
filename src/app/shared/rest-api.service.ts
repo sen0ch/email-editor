@@ -11,8 +11,8 @@ import { retry, catchError } from 'rxjs/operators';
 export class RestApiService {
 
   // Define API
-  // apiURL = 'https://my-json-server.typicode.com/sen0ch/email-editor/';
-  apiURL = 'http://localhost:3000';
+  apiURL = 'https://my-json-server.typicode.com/sen0ch/email-editor/';
+  // apiURL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
