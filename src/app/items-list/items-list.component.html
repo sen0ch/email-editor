@@ -27,16 +27,15 @@
         </thead>
         <tbody>
           <tr *ngFor="let item of Item">
-              <td>{{item.anchor}}</td>
-              <td>{{item.headline}}</td>
-              <td>{{item.item1}}</td>
-              <td>{{item.description1}}</td>
-              <td>{{item.item2}}</td>
-              <td>{{item.description2}}</td>
-              <td>{{item.item3}}</td>
-              <td>{{item.description3}}</td>
-              <td><span class="btn btn-outline-primary" routerLink="/item-edit/{{item.id}}">Edit</span></td>             
-              <!--<span class="btn btn-outline-primary" (click)="deleteItem(item.id)">Delete</span>-->
+              <td>{{ item.anchor }}</td>
+              <td>{{ item.headline }}</td>
+              <td>{{ item.item1 }}</td>
+              <td>{{ item.description1 }}</td>
+              <td>{{ item.item2 }}</td>
+              <td>{{ item.description2 }}</td>
+              <td>{{ item.item3 }}</td>
+              <td>{{ item.description3 }}</td>
+              <td><span class="btn btn-outline-primary" routerLink="/item-edit/{{item.id}}">Edit</span></td>
           </tr>
         </tbody>
       </table>

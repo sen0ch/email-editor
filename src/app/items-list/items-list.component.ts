@@ -23,14 +23,6 @@ export class ItemsListComponent implements OnInit {
     });
   }
 
-  deleteItem(id) {
-    if (window.confirm('Are you sure, you want to delete?')) {
-      this.restApi.deleteItem(id).subscribe(data => {
-        this.loadItems();
-      });
-    }
-  }
-
 }
 
 
