@@ -27,7 +27,10 @@ export class ItemEditComponent implements OnInit {
   updateItem() {
     if (window.confirm('Are you sure, you want to update?')) {
       this.restApi.updateItem(this.id, this.itemData).subscribe(data => {
-        this.router.navigate(['items-proof']);
+        this.router.navigate(['items-proof']),
+        this.itemData = data;
+
+        console.log(data);
       });
     }
   }

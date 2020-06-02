@@ -12,6 +12,7 @@ export class RestApiService {
 
   // Define API
   apiURL = 'https://my-json-server.typicode.com/sen0ch/email-editor/';
+  // For local development
   // apiURL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
