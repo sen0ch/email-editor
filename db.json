@@ -5,28 +5,32 @@
       "name": "Name 0",
       "headline": "Headline or description here",
       "description": "Description 0",
-      "image": "anchor.jpg"
+      "image": "anchor.jpg",
+      "url": "anchor url"
     },
     {
       "id": 1,
       "name": "Name 1",
       "headline": "Item 1",
       "description": "Description 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image": "item1.jpg"
+      "image": "item1.jpg",
+      "url": "item 1 url"
     },
     {
       "id": 2,
       "name": "Name 2",
       "headline": "Item 2",
       "description": "Description 2. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Elementum curabitur vitae nunc sed.",
-      "image": "item2.jpg"
+      "image": "item2.jpg",
+      "url": "item 2 url"
     },
     {
       "id": 3,
       "name": "Name 3",
       "headline": "Item 3",
       "description": "Description 3. At erat pellentesque adipiscing commodo elit at imperdiet dui.",
-      "image": "item3.jpg"
+      "image": "item3.jpg",
+      "url": "item 3 url"
     }
   ]
 }

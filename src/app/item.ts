@@ -4,5 +4,6 @@ export interface Item {
   headline: string;
   description: string;
   image: string;
+  url: string;
 }
 
