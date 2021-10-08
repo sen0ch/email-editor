@@ -1,0 +1,285 @@
+
+
+<div style="text-align:center;">
+
+<!--<div *ngFor="let item of items.slice(1)">-->
+  <div *ngIf="items.length !== 0">
+
+<!--body of email (header is included on code page)-->
+<style type="text/css">
+  body {
+    margin: 0;
+     padding: 0;
+     -ms-text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+   }
+  
+  table {
+    border-spacing: 0;
+   }
+  
+  table td {
+    border-collapse: collapse;
+   }
+  
+  .ExternalClass {
+    width: 100%;
+   }
+  
+  .ExternalClass,
+  .ExternalClass p,
+  .ExternalClass span,
+  .ExternalClass font,
+  .ExternalClass td,
+  .ExternalClass div {
+    line-height: 100%;
+   }
+  
+  .ReadMsgBody {
+    width: 100%;
+     background-color: #ebebeb;
+   }
+  
+  table {
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+   }
+  
+  img {
+    -ms-interpolation-mode: bicubic;
+   }
+  
+  .yshortcuts a {
+    border-bottom: none !important;
+   }
+  
+  @media screen and (max-width: 599px) {
+    .force-row,
+    .container {
+      width: 100% !important;
+       max-width: 100% !important;
+     }
+  }
+  @media screen and (max-width: 400px) {
+    .container-padding {
+      padding-left: 12px !important;
+       padding-right: 12px !important;
+     }
+  }
+  .ios-footer a {
+    color: #aaaaaa !important;
+     text-decoration: underline;
+   }
+  
+  @media screen and (max-width: 599px) {
+    .col {
+      width: 100% !important;
+       border-top: 1px solid #eee;
+       padding-bottom: 0 !important;
+     }
+  
+    .cols-wrapper {
+      padding-top: 18px;
+     }
+  
+    .img-wrapper {
+      float: right;
+       max-width: 40% !important;
+       height: auto !important;
+       margin-left: 12px;
+     }
+  
+    .subtitle {
+      margin-top: 0 !important;
+     }
+  }
+  @media screen and (max-width: 400px) {
+    .cols-wrapper {
+      padding-left: 0 !important;
+       padding-right: 0 !important;
+     }
+  
+    .content-wrapper {
+      padding-left: 12px !important;
+       padding-right: 12px !important;
+     }
+  }
+  a[href^="x-apple-data-detectors:"],
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+     text-decoration: none !important;
+     font-size: inherit !important;
+     font-family: inherit !important;
+     font-weight: inherit !important;
+     line-height: inherit !important;
+   }
+
+  </style>
+
+
+<!-- 100% background wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0">
+  <tr>
+    <td align="center" valign="top" bgcolor="#F0F0F0" style="background-color: #F0F0F0; ">
+
+      <br>
+
+      <!-- 600px container (white background) -->
+      <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" >
+        <tr>
+          <td class="container-padding header" align="left" style="font-family:Helvetica, Arial, sans-serif; font-size:24px; font-weight:bold; padding-bottom:12px; color:#333333; padding-left:24px; padding-right:24px">
+            Logo
+          </td>
+        </tr>
+        <tr>
+          <td class="content" align="left" style="padding-top:24px; padding-bottom:12px; background-color:#ffffff">
+            
+<table width="600" border="0" cellpadding="0" cellspacing="0" class="force-row" style="width: 600px; ">
+  <tr>
+    <td class="content-wrapper" style="padding-left:24px; padding-right:24px; ">
+      <a href="{{ items[0].url }}"><img src="/assets/images/anchor.png" border="0" alt="{{ items[0].headline }}" width="550" height="auto" hspace="0" vspace="0" style="max-width:100%;"></a>
+      <br><br>
+      <div class="title" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; font-weight:600; color:#333333">{{ items[0].headline  }}</div>
+      <!--edit-->
+      <a routerLink="/detail/{{items[0].id}}">
+        <button mat-flat-button title="Edit">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </a>
+      <!--/edit-->
+    </td>
+  </tr>
+  <tr>
+    <td class="cols-wrapper" style="padding-left:12px; padding-right:12px">
+
+    <!--[if mso]>
+      <table border="0" width="576" cellpadding="0" cellspacing="0" style="width: 576px; ">
+      <tr><td width="192" style="width: 192px; " valign="top"><![endif]-->
+
+        <table width="192" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width: 192px; ">
+          <tr>
+            <td class="col" valign="top" style="padding-left:12px; padding-right:12px; padding-top:18px; padding-bottom:12px">
+              <table border="0" cellpadding="0" cellspacing="0" class="img-wrapper">
+                <tr>
+                  <td style="padding-bottom:18px"><a href="{{ items[1].url }}"><img src="/assets/images/item1.jpg" border="0" alt="{{ items[1].headline}}" width="168" height="auto" hspace="0" vspace="0" style="max-width:100%; border-radius: 50%;" class="image"></a></td>
+                </tr>
+              </table>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="subtitle" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:22px; font-weight:600; color:#333333; padding-bottom:6px">{{ items[1].headline }}</td>
+                </tr>
+              </table>
+              <div class="col-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:13px; line-height:20px; text-align:left; color:#333333">{{ items[1].description }}</div>
+              <!--edit-->
+              <a routerLink="/detail/{{items[1].id}}">
+                <button mat-flat-button title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </a>
+              <!--/edit-->
+              <br>
+            </td>
+          </tr>
+        </table>
+     
+          <!--[if mso]></td><td width="192" style="width: 192px; " valign="top"><![endif]-->        
+      
+        <table width="192" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width: 192px; ">
+          <tr>
+            <td class="col" valign="top" style="padding-left:12px; padding-right:12px; padding-top:18px; padding-bottom:12px">
+              <table border="0" cellpadding="0" cellspacing="0" class="img-wrapper">
+                <tr>
+                  <td style="padding-bottom:18px"><a href="{{ items[2].url  }}"><img src="/assets/images/item2.jpg" border="0" alt="{{ items[2].headline}}" width="168" height="auto" hspace="0" vspace="0" style="max-width:100%; border-radius: 50%;" class="image"></a></td>
+                </tr>
+              </table>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="subtitle" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:22px; font-weight:600; color:#333333; padding-bottom:6px">{{ items[2].headline}}</td>
+                </tr>
+              </table>
+              <div class="col-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:13px; line-height:20px; text-align:left; color:#333333">{{ items[2].description }}</div>
+              <!--edit-->
+              <a routerLink="/detail/{{items[2].id}}">
+                <button mat-flat-button title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </a>
+              <!--/edit-->
+              <br>
+            </td>
+          </tr>
+        </table>
+       
+          <!--[if mso]></td><td width="192" style="width: 192px; " valign="top"><![endif]-->        
+       
+        <table width="192" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width: 192px; ">
+          <tr>
+            <td class="col" valign="top" style="padding-left:12px; padding-right:12px; padding-top:18px; padding-bottom:12px">
+              <table border="0" cellpadding="0" cellspacing="0" class="img-wrapper">
+                <tr>
+                  <td style="padding-bottom:18px"><a href="{{ items[3].url  }}"><img src="/assets/images/item3.jpg" border="0" alt="{{ items[3].headline }}" width="168" height="auto" hspace="0" vspace="0" style="max-width:100%; border-radius: 50%;" class="image"></a></td>
+                </tr>
+              </table>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="subtitle" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:22px; font-weight:600; color:#333333; padding-bottom:6px">{{ items[3].headline }}</td>
+                </tr>
+              </table>
+              <div class="col-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:13px; line-height:20px; text-align:left; color:#333333">{{ items[3].description }}</div>
+              <!--edit-->
+              <a routerLink="/detail/{{items[3].id}}">
+                <button mat-flat-button title="Edit">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </a>
+              <!--/edit-->
+              <br>
+            </td>
+          </tr>
+        </table>
+
+      <!--[if mso]></td></tr></table><![endif]-->
+
+    </td>
+  </tr>
+</table>
+
+          </td>
+        </tr>
+        <tr>
+          <td class="container-padding footer-text" align="left" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:16px; color:#aaaaaa; padding-left:24px; padding-right:24px">
+            <br><br>
+            Sample Footer text: © 2020 Acme, Inc.
+            <br><br>
+
+            You are receiving this email because you opted in on our website. Update your <a href="#" style="color:#aaaaaa">email preferences</a> or <a href="#" style="color:#aaaaaa">unsubscribe</a>.
+            <br><br>
+
+            <strong>Acme, Inc.</strong><br>
+            <span class="ios-footer">
+              123 Main St.<br>
+              City, ST 12345<br>
+            </span>
+            <a href="http://www.acme-inc.com" style="color:#aaaaaa">www.acme-inc.com</a><br>
+
+            <br><br>
+
+          </td>
+        </tr>
+      </table>
+<!--/600px container -->
+
+    </td>
+  </tr>
+</table>
+<!--/100% background wrapper-->
+
+
+</div>
+</div>
+
+
+
+
+
+
